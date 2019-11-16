@@ -9,13 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="avc-page">
     <%= render(Sidebar, title: "Action View Component") do %>
       <%= render(SidebarLink, link: "#", title: "Sidebar link 1") %>
       <%= render(SidebarLink, link: "#", title: "Sidebar link 2") %>
       <%= render(SidebarLink, link: "#", title: "Sidebar link 3") %>
       <%= render(SidebarLink, link: "#", title: "Sidebar link 4") %>
     <% end %>
-    <%= yield %>
+    <div class="avc-stage">
+      <%= yield %>
+    </div>
   </body>
 </html>

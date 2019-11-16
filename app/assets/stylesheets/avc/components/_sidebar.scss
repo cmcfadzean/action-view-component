@@ -1,0 +1,43 @@
+.avc-sidebar {
+  width: $sidebar-width;
+  background: $color-white-dark;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  &-md {
+    width: $sidebar-width-md;
+  }
+  &-lg {
+    width: $sidebar-width-lg;
+  }
+  &-body {
+    padding: $spacing;
+    flex: 1;
+    overflow: auto;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    margin: $spacing-sm 0;
+    font-weight: $font-weight-semibold;
+    color: $font-color;
+    &:hover {
+      color: $font-color-light;
+    }
+    &-sub {
+      @extend .avc-sidebar-link;
+      margin: $spacing-xs $spacing-lg;
+      font-size: $font-size-sm;
+      font-weight: $font-weight;
+    }
+    i {
+      font-size: $font-size-2xl;
+      margin-right: $spacing-xs;
+      color: $font-color-light;
+    }
+  }
+  &-footer {
+    padding: $spacing;
+    border-top: $border-default;
+  }
+}

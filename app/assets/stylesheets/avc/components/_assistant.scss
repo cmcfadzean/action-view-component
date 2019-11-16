@@ -1,0 +1,10 @@
+.avc-assistant {
+  display: flex;
+  z-index: 998;
+  padding: $spacing-sm $spacing;
+  border-bottom: $border-default;
+  &-body {
+    flex: 1;
+    padding-right: $spacing;
+  }
+}

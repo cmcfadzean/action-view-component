@@ -1,0 +1,13 @@
+.avc-container {
+  margin: 0 auto;
+  padding: 0 $spacing;
+  max-width: $container-width;
+  &-sm {
+    @extend .avc-container;
+    max-width: $container-width-sm;
+  }
+  &-fluid {
+    @extend .avc-container;
+    max-width: $container-width-fluid;
+  }
+}
